@@ -23,15 +23,15 @@ let awayScore = 0
 
 function awayPlusOne(){
     awayScore += 1
-    awayScoreEl.textContent = guestScore
+    awayScoreEl.textContent = awayScore
 }
 
 function awayPlusTwo(){
     awayScore += 2
-    awayScoreEl.textContent = guestScore
+    awayScoreEl.textContent = awayScore
 }
 
-function guestPlusThree(){
-    guestScore += 3
-    guestScoreEl.textContent = guestScore
+function awayPlusThree(){
+    awayScore += 3
+    awayScoreEl.textContent = awayScore
 }
