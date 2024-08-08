@@ -17,18 +17,18 @@ function homePlusThree(){
     homeScoreEl.textContent = homeScore
 }
 
-let guestScoreBtnOne = document.getElementById("guest-btn-1")
-let guestScoreEl =document.getElementById("guest-score")
-let guestScore = 0
+let awayScoreBtnOne = document.getElementById("away-btn-1")
+let awayScoreEl =document.getElementById("away-score")
+let awayScore = 0
 
-function guestPlusOne(){
-    guestScore += 1
-    guestScoreEl.textContent = guestScore
+function awayPlusOne(){
+    awayScore += 1
+    awayScoreEl.textContent = guestScore
 }
 
-function guestPlusTwo(){
-    guestScore += 2
-    guestScoreEl.textContent = guestScore
+function awayPlusTwo(){
+    awayScore += 2
+    awayScoreEl.textContent = guestScore
 }
 
 function guestPlusThree(){
