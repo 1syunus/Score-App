@@ -1,35 +1,25 @@
 body {
     margin: 0;
     text-align: center;
-    background: #1B244A;
+    background: #f9f9f9;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
 }
 
-#home-score {
-    background: #0a0001;
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    font-size: 90px;
-    color: #F94F6D;
-    width: 120px;
-    margin: 20px;
-    padding: 10px 25px;
-    border-radius: 5%;
+.score {
+    background: #ffffff;
+    color: #4CAF50; /* Green for positive feedback and readability */
+    font-size: 3.75rem;
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8); 
+    border: 1px solid #ddd;
 }
 
-#away-score {
-    background: #0a0001;
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    font-size: 90px;
-    color: #F94F6D;
-    width: 120px;
-    margin: 20px;
-    padding: 10px 25px;
-    border-radius: 5%;
-}
-
-h3 {
-    font-size: 40px;
-    color: #EEEEEE;
-    margin-bottom: -15px;
+h1 {
+    font-size: 2rem;
+    color: #444; 
+    margin-bottom: -10px;
 }
 
 .container {
@@ -38,15 +28,37 @@ h3 {
 }
 
 button {
-    background: none;
-    font-family: 'Cursed Timer ULiL', sans-serif;
-    border: 1px solid #9AABD8;
-    color: #9AABD8;
-    padding: 12px 10px 10px 10px;
-    border-radius: 15%;
-    justify-content: space-between;
-    margin-right: 5px;
-       
-                                                
+    background: #4CAF50; 
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    cursor: pointer;                            
 }
 
+button:hover {
+    background: #45A049; 
+    transform: scale(1.05); 
+}
+
+
+#reset-btn {
+    background: #F44336; /*Destrucive action*/
+    color: white;
+    margin-top: 350px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-height: 50px;
+}
+
+#reset-btn:hover {
+    background: #E53935;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}

@@ -1,30 +1,48 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Score Counter</title>
         <link rel="stylesheet" href="index.css">
         <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
                 
     </head>
     <body>
-        <div class="container">
-            <div class="column">
-                <h3>HOME</h3>
-                <h2 id="home-score">0</h2>
-                <div>
-                    <button id="home-btn-1" onclick="homePlusOne()">+1</button>
-                    <button id="home-btn-2" onclick="homePlusTwo()">+2</button>
-                    <button id="home-btn-3" onclick="homePlusThree()">+3</button>
-                </div>
-            </div>
-            <div class="column">
-                <h3>AWAY</h3>
-                <h2 id="away-score">0</h2>
-                <div>
-                    <button id="away-btn-1" onclick="awayPlusOne()">+1</button>
-                    <button id="away-btn-2" onclick="awayPlusTwo()">+2</button>
-                    <button id="away-btn-3" onclick="awayPlusThree()">+3</button>
-                </div>
-            </div>
-        </div>
+        <main class="container">
+                <!-- Home section -->
+                <section class="column" aria-labelledby="home-heading">
+                    <h1>HOME</h1>
+                    <h2 class="score" id="home-score" aria-live=
+                    "polite" aria-atomic="true">0</h2>
+                    <div>
+                        <button id="home-btn-1" aria-label="Add 1 point to Home"
+                        >+1</button>
+
+                        <button id="home-btn-2" aria-label="Add 2 points to Home"
+                        >+2</button>
+
+                        <button id="home-btn-3" aria-label="Add 3 points to Home"
+                        >+3</button>
+                    </div>
+                </section>
+                <!-- Reset button -->
+                <button id="reset-btn" aria-label="Reset both scores">Reset Scores</button>
+
+                <!-- Away section -->
+                <section class="column" aria-labelledby="away-heading">
+                    <h1>AWAY</h1>
+                    <h2 class="score" id="away-score" aria-live="polite" aria-atomic="true">0</h2>
+                    <div>
+                        <button id="away-btn-1" aria-label="Add 1 point to Away"
+                        >+1</button>
+                        <button id="away-btn-2" aria-label="Add 2 points to Away"
+                        >+2</button>
+                        <button id="away-btn-3" aria-label="Add 3 points to Away"
+                        >+3</button>
+                    </div>
+                </section>
+
+        </main>
+       
         <script src="index.js"></script>
     </body>
 </html>
